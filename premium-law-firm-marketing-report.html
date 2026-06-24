@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أفكار تسويقية استراتيجية لمكتب محاماة</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
+
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #0f2044;
+    --navy-light: #162a54;
+    --gold: #c9a227;
+    --gold-light: #e8c04a;
+    --gold-pale: #f5e6b0;
+    --white: #ffffff;
+    --card-bg: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-muted: #5a6480;
+    --border: rgba(201,162,39,0.25);
+    --shadow: 0 8px 32px rgba(0,0,0,0.22);
+    --shadow-card: 0 4px 20px rgba(0,0,0,0.10);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Cairo', 'Segoe UI', Tahoma, Arial, sans-serif;
+    background: var(--navy);
+    color: var(--text-dark);
+    direction: rtl;
+    text-align: right;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  .site-header {
+    background: linear-gradient(135deg, #0a1628 0%, #162a54 60%, #0f2044 100%);
+    border-bottom: 2px solid var(--gold);
+    padding: 48px 40px 36px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .site-header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(201,162,39,0.13) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .header-icon { font-size: 3.2rem; display: block; margin-bottom: 12px; }
+  .site-header h1 {
+    font-size: 2.4rem; font-weight: 900;
+    color: var(--white);
+    letter-spacing: 1px;
+    line-height: 1.3;
+    text-shadow: 0 2px 12px rgba(201,162,39,0.3);
+  }
+  .site-header h1 span { color: var(--gold-light); }
+  .site-header .subtitle {
+    margin-top: 10px;
+    color: var(--gold-pale);
+    font-size: 1.05rem;
+    font-weight: 400;
+    opacity: 0.85;
+  }
+  .header-badges {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+    margin-top: 22px;
+  }
+  .badge {
+    background: rgba(201,162,39,0.15);
+    border: 1px solid var(--gold);
+    color: var(--gold-light);
+    border-radius: 20px;
+    padding: 5px 16px;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+
+  /* ── Action Buttons ── */
+  .action-bar {
+    display: flex; justify-content: center; gap: 16px;
+    padding: 28px 40px 0;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-family: inherit; font-size: 0.95rem; font-weight: 700;
+    cursor: pointer; border: none; transition: all 0.22s;
+    text-decoration: none;
+  }
+  .btn-gold {
+    background: linear-gradient(135deg, var(--gold) 0%, #a87f1a 100%);
+    color: var(--navy);
+    box-shadow: 0 4px 16px rgba(201,162,39,0.35);
+  }
+  .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,162,39,0.45); }
+  .btn-outline {
+    background: transparent;
+    border: 2px solid var(--gold);
+    color: var(--gold-light);
+  }
+  .btn-outline:hover { background: rgba(201,162,39,0.12); }
+
+  /* ── Main Layout ── */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+  }
+
+  /* ── Section ── */
+  .section { margin-bottom: 48px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    color: var(--gold-light);
+    font-size: 1.45rem; font-weight: 900;
+    margin-bottom: 24px;
+    padding-bottom: 14px;
+    border-bottom: 1.5px solid var(--border);
+    text-shadow: 0 1px 8px rgba(201,162,39,0.2);
+  }
+  .section-title .sec-icon { font-size: 1.6rem; }
+
+  /* ── Card ── */
+  .card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    padding: 28px 30px;
+    box-shadow: var(--shadow-card);
+    margin-bottom: 20px;
+    border: 1px solid rgba(201,162,39,0.10);
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute; top: 0; right: 0;
+    width: 4px; height: 100%;
+    background: linear-gradient(180deg, var(--gold) 0%, var(--gold-light) 100%);
+    border-radius: 0 14px 14px 0;
+  }
+  .card h3 {
+    font-size: 1.15rem; font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .card h3 .icon { color: var(--gold); }
+  .card ul { list-style: none; padding: 0; }
+  .card ul li {
+    padding: 9px 0 9px 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.07);
+    color: #2c3a5a;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .card ul li:last-child { border-bottom: none; }
+  .card ul li::before {
+    content: '◆';
+    color: var(--gold);
+    font-size: 0.55rem;
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+  .card p {
+    color: #2c3a5a; font-size: 0.97rem; line-height: 1.85;
+  }
+
+  /* ── Grid ── */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 900px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+  @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+
+  /* ── Intro Card Special ── */
+  .intro-card {
+    background: linear-gradient(135deg, #1a2e5a 0%, #0f2044 100%);
+    color: var(--white);
+    border: 1px solid var(--gold);
+  }
+  .intro-card::before { display: none; }
+  .intro-card h3 { color: var(--gold-light); }
+  .intro-card p { color: rgba(255,255,255,0.87); font-size: 1.02rem; line-height: 1.95; }
+  .intro-card ul li { color: rgba(255,255,255,0.85); border-bottom-color: rgba(255,255,255,0.1); }
+  .intro-card ul li::before { color: var(--gold-light); }
+
+  .stat-row {
+    display: flex; flex-wrap: wrap; gap: 14px;
+    margin-top: 22px;
+  }
+  .stat-box {
+    flex: 1; min-width: 130px;
+    background: rgba(201,162,39,0.12);
+    border: 1px solid rgba(201,162,39,0.35);
+    border-radius: 10px;
+    padding: 14px 16px;
+    text-align: center;
+  }
+  .stat-box .num { font-size: 1.9rem; font-weight: 900; color: var(--gold-light); display: block; }
+  .stat-box .label { font-size: 0.8rem; color: rgba(255,255,255,0.75); margin-top: 2px; }
+
+  /* ── Campaign Card ── */
+  .campaign-card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    margin-bottom: 22px;
+    border: 1px solid rgba(201,162,39,0.12);
+  }
+  .campaign-header {
+    background: linear-gradient(90deg, var(--navy) 0%, var(--navy-light) 100%);
+    padding: 16px 24px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .campaign-header .camp-icon { font-size: 1.5rem; }
+  .campaign-header h3 { color: var(--gold-light); font-size: 1.1rem; font-weight: 800; }
+  .campaign-body { padding: 22px 24px; }
+  .camp-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px; }
+  .camp-meta-item label {
+    display: block; font-size: 0.75rem; font-weight: 700;
+    color: var(--gold); text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .camp-meta-item p { font-size: 0.92rem; color: #2c3a5a; line-height: 1.6; }
+  .camp-ad-text {
+    background: #f7f4e9;
+    border-right: 4px solid var(--gold);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    font-size: 0.93rem; color: #1a1a2e; line-height: 1.8; font-style: italic;
+  }
+  .cta-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: linear-gradient(135deg, var(--gold) 0%, #a87f1a 100%);
+    color: var(--navy);
+    border-radius: 6px;
+    padding: 7px 18px;
+    font-size: 0.87rem; font-weight: 800;
+  }
+
+  /* ── Table ── */
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow-card);
+  }
+  table {
+    width: 100%; border-collapse: collapse;
+    background: var(--white);
+    font-size: 0.88rem;
+  }
+  table thead tr {
+    background: linear-gradient(90deg, var(--navy) 0%, #162a54 100%);
+  }
+  table thead th {
+    padding: 14px 12px;
+    color: var(--gold-light);
+    font-weight: 700; font-size: 0.85rem;
+    text-align: right;
+    white-space: nowrap;
+    border-left: 1px solid rgba(255,255,255,0.07);
+  }
+  table thead th:last-child { border-left: none; }
+  table tbody tr { border-bottom: 1px solid rgba(0,0,0,0.06); }
+  table tbody tr:nth-child(even) { background: #f9f8f4; }
+  table tbody tr:hover { background: #fdf8ea; }
+  table tbody td {
+    padding: 11px 12px;
+    color: #2c3a5a;
+    vertical-align: top;
+    line-height: 1.6;
+    border-left: 1px solid rgba(0,0,0,0.05);
+  }
+  table tbody td:last-child { border-left: none; }
+  .day-num {
+    font-weight: 900; font-size: 1.1rem; color: var(--navy);
+    text-align: center; min-width: 38px;
+  }
+  .type-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.78rem; font-weight: 700;
+    white-space: nowrap;
+  }
+  .t-tip   { background:#e8f4fd; color:#1565c0; }
+  .t-reel  { background:#fce4ec; color:#c62828; }
+  .t-post  { background:#e8f5e9; color:#2e7d32; }
+  .t-story { background:#fff3e0; color:#e65100; }
+  .t-inf   { background:#f3e5f5; color:#6a1b9a; }
+  .t-poll  { background:#e0f2f1; color:#00695c; }
+  .t-live  { background:#fff8e1; color:#f57f17; }
+  .t-qa    { background:#fce4ec; color:#880e4f; }
+  .plt-tag {
+    display: inline-block; padding: 2px 8px;
+    border-radius: 10px; font-size: 0.75rem; font-weight: 700;
+  }
+  .plt-ig  { background: linear-gradient(135deg,#f9a825,#e91e8c); color:#fff; }
+  .plt-fb  { background:#1877f2; color:#fff; }
+  .plt-li  { background:#0077b5; color:#fff; }
+  .plt-yt  { background:#ff0000; color:#fff; }
+  .plt-tw  { background:#000; color:#fff; }
+  .plt-tik { background:#010101; color:#fff; }
+
+  /* ── Post Card ── */
+  .post-card {
+    background: #f9f8f4;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    border: 1px dashed rgba(201,162,39,0.35);
+  }
+  .post-card .post-label {
+    font-size: 0.75rem; font-weight: 700; color: var(--gold);
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .post-card p { font-size: 0.93rem; color: #1a1a2e; line-height: 1.85; }
+  .post-tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .post-tags span {
+    background: rgba(10,22,40,0.07);
+    border-radius: 10px;
+    padding: 2px 10px;
+    font-size: 0.78rem; color: #3a4a70;
+  }
+
+  /* ── Ad Texts ── */
+  .ad-text-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 14px;
+    border-right: 5px solid var(--gold);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  }
+  .ad-text-card .ad-num {
+    font-size: 0.75rem; font-weight: 800; color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .ad-text-card p { font-size: 0.95rem; color: #1a1a2e; line-height: 1.85; }
+
+  /* ── Tips ── */
+  .tip-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 700px) { .tip-grid { grid-template-columns: 1fr; } .camp-meta { grid-template-columns: 1fr; } }
+  .tip-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px 18px;
+    border-top: 3px solid var(--gold);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  }
+  .tip-item .tip-icon { font-size: 1.4rem; margin-bottom: 8px; display: block; }
+  .tip-item h4 { font-size: 0.95rem; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+  .tip-item p { font-size: 0.88rem; color: #4a5878; line-height: 1.7; }
+
+  /* ── Ethics Box ── */
+  .ethics-box {
+    background: linear-gradient(135deg, #1a2e5a 0%, #0a1628 100%);
+    border: 1px solid var(--gold);
+    border-radius: 14px;
+    padding: 28px 30px;
+    color: rgba(255,255,255,0.88);
+  }
+  .ethics-box h3 { color: var(--gold-light); margin-bottom: 16px; font-size: 1.1rem; }
+  .ethics-box ul { list-style: none; }
+  .ethics-box ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.93rem; line-height: 1.7;
+    display: flex; gap: 10px;
+  }
+  .ethics-box ul li:last-child { border-bottom: none; }
+  .ethics-box ul li::before { content: '✓'; color: var(--gold); font-weight: 900; flex-shrink: 0; }
+
+  /* ── Footer ── */
+  .site-footer {
+    background: linear-gradient(90deg, var(--navy) 0%, var(--navy-light) 100%);
+    border-top: 2px solid var(--gold);
+    padding: 28px 40px;
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.85rem;
+  }
+  .site-footer span { color: var(--gold); }
+
+  /* ── Toast ── */
+  #toast {
+    position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(80px);
+    background: linear-gradient(135deg, var(--gold) 0%, #a87f1a 100%);
+    color: var(--navy);
+    padding: 12px 28px; border-radius: 8px;
+    font-weight: 700; font-size: 0.95rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+    z-index: 9999; pointer-events: none;
+  }
+  #toast.show { transform: translateX(-50%) translateY(0); }
+
+  /* ── Print ── */
+  @media print {
+    body { background: #fff; }
+    .site-header { background: #fff; border-bottom: 2px solid #c9a227; }
+    .site-header h1, .section-title { color: #0a1628 !important; }
+    .action-bar { display: none; }
+    .intro-card { background: #f0f4ff; }
+    .campaign-header { background: #0a1628; }
+    .card::before { display: block; }
+    table thead tr { background: #0a1628; }
+    .site-footer { background: #0a1628; }
+    .tip-item, .ad-text-card, .post-card { break-inside: avoid; }
+  }
+
+  /* ── Divider ── */
+  .gold-divider {
+    border: none; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 36px 0;
+    opacity: 0.4;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<header class="site-header">
+  <span class="header-icon">⚖️</span>
+  <h1>أفكار تسويقية استراتيجية<br><span>لمكتب محاماة</span></h1>
+  <p class="subtitle">دليل شامل للتسويق القانوني الرقمي المهني — مُعدّ بمعايير عالية</p>
+  <div class="header-badges">
+    <span class="badge">📌 تسويق رقمي</span>
+    <span class="badge">📢 محتوى سوشال ميديا</span>
+    <span class="badge">🎬 أفكار فيديو</span>
+    <span class="badge">🏛️ حملات إعلانية</span>
+    <span class="badge">✍️ نصوص جاهزة</span>
+    <span class="badge">📅 خطة 30 يوم</span>
+  </div>
+</header>
+
+<!-- ═══════════════ ACTION BUTTONS ═══════════════ -->
+<div class="action-bar">
+  <button class="btn btn-gold" onclick="printPage()">🖨️ طباعة التقرير</button>
+  <button class="btn btn-outline" onclick="copySummary()">📋 نسخ ملخص الأفكار</button>
+</div>
+
+<!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+<div class="container">
+
+  <!-- ── 1. STRATEGIC INTRO ── -->
+  <section class="section">
+    <h2 class="section-title"><span class="sec-icon">🏛️</span> المقدمة الاستراتيجية — التسويق القانوني</h2>
+
+    <div class="card intro-card">
+      <h3>⚖️ لماذا يحتاج مكتب المحاماة إلى تسويق احترافي؟</h3>
+      <p>
+        في ظل التحول الرقمي المتسارع، أصبح الحضور الرقمي لمكتب المحاماة ضرورة حتمية لا ترفاً. العملاء المحتملون اليوم يبحثون عن محامٍ عبر الإنترنت قبل أي شيء آخر، ويبنون انطباعاتهم الأولى من خلال ما يرونه على وسائل التواصل الاجتماعي ومحركات البحث. التسويق القانوني الاحترافي لا يعني الترويج المبالغ فيه، بل هو بناء الثقة، وإبراز الخبرة، وخلق حضور راسخ يجعل العميل يشعر بالأمان قبل أن يطرق باب مكتبك.
+      </p>
+      <div class="stat-row">
+        <div class="stat-box"><span class="num">73%</span><span class="label">من العملاء يبحثون عن محامٍ أونلاين</span></div>
+        <div class="stat-box"><span class="num">68%</span><span class="label">يثقون بمكتب يملك محتوى تعليمياً</span></div>
+        <div class="stat-box"><span class="num">5×</span><span class="label">عائد التسويق الرقمي مقارنة بالتقليدي</span></div>
+        <div class="stat-box"><span class="num">90%</span><span class="label">يشاهدون فيديو قبل التواصل</span></div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3><span class="icon">📌</span> ركائز التسويق القانوني الناجح</h3>
+        <ul>
+          <li>بناء السلطة والمصداقية عبر المحتوى التعليمي الموضوعي</li>
+          <li>توضيح التخصصات القانونية بدقة لاستهداف الجمهور الصحيح</li>
+          <li>إبراز قصص النجاح الموثقة مع احترام سرية الموكلين</li>
+          <li>الحضور المتسق والمنتظم عبر قنوات متعددة</li>
+          <li>الاستجابة السريعة للاستفسارات وبناء علاقة أولى قوية</li>
+          <li>الجمع بين التثقيف القانوني والترويج المهني بتوازن راقٍ</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">🎯</span> أهداف التسويق المرحلية</h3>
+        <ul>
+          <li><strong>الشهر 1-2:</strong> تأسيس الهوية الرقمية وبناء قاعدة المتابعين</li>
+          <li><strong>الشهر 3-4:</strong> إنتاج محتوى ذو قيمة وبناء الثقة</li>
+          <li><strong>الشهر 5-6:</strong> إطلاق الحملات الإعلانية المدفوعة</li>
+          <li><strong>الشهر 7-9:</strong> تحسين محركات البحث وبناء مجتمع رقمي</li>
+          <li><strong>الشهر 10-12:</strong> قياس النتائج والتوسع في القنوات</li>
+          <li>مراجعة دورية لكل محتوى للتأكد من امتثاله للأخلاقيات</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="gold-divider">
+
+  <!-- ── 2. SOCIAL MEDIA IDEAS ── -->
+  <section class="section">
+    <h2 class="section-title"><span class="sec-icon">📱</span> أفكار محتوى لوسائل التواصل الاجتماعي</h2>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3><span class="icon">💡</span> محتوى تعليمي قانوني</h3>
+        <ul>
+          <li>سلسلة "هل تعلم؟" — معلومة قانونية يومية مُبسَّطة</li>
+          <li>شرح مصطلحات قانونية صعبة بلغة يفهمها الجميع</li>
+          <li>أبرز حقوق المواطن التي لا يعرفها معظم الناس</li>
+          <li>ماذا تفعل إذا تعرضت لـ [موقف قانوني شائع]؟</li>
+          <li>الفرق بين الدعوى المدنية والجنائية — شرح مُبسَّط</li>
+          <li>كيف تكتب عقداً صحيحاً؟ أبرز البنود الواجبة</li>
+          <li>متى تحتاج محامياً؟ 10 مواقف لا تتهاون بها</li>
+          <li>أشهر المفاهيم القانونية الخاطئة التي يصدقها الناس</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">🏆</span> محتوى يبني الثقة والمصداقية</h3>
+        <ul>
+          <li>قصة نجاح موجزة (بدون كشف هوية الموكل) مع الدرس المستفاد</li>
+          <li>من وراء الكواليس — يوم في حياة المحامي المهني</li>
+          <li>تقديم فريق المكتب وخبراتهم المتخصصة</li>
+          <li>شهادات موكلين راضين (بإذنهم وبدون تفاصيل قانونية)</li>
+          <li>إنجازات المكتب وشهادات التقدير والمشاركة المجتمعية</li>
+          <li>مشاركة المكتب في مؤتمرات ومحافل قانونية</li>
+          <li>أعداد القضايا المُنجزة سنوياً والتخصصات المغطاة</li>
+          <li>لقطات من مكتبة المكتب والبيئة الاحترافية</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">📊</span> محتوى تفاعلي وجماهيري</h3>
+        <ul>
+          <li>استفتاء: "هل تعرف حقوقك في هذه الحالة؟"</li>
+          <li>اسألوني — جلسة إجابة على أسئلة قانونية عامة</li>
+          <li>اختبار "اختبر معلوماتك القانونية" بنقاط</li>
+          <li>رأيك يهمنا: ما أكثر مشكلة قانونية تواجهها؟</li>
+          <li>تحديات قانونية ذكية تجذب التعليقات والمشاركة</li>
+          <li>نشر آراء المتابعين حول حالة قانونية افتراضية</li>
+          <li>مسابقة ثقافية قانونية بجائزة بسيطة</li>
+          <li>ردود ودية على الأسئلة الشائعة في التعليقات</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">🗓️</span> محتوى مناسباتي ودوري</h3>
+        <ul>
+          <li>إحياء اليوم العالمي للعدالة ويوم المحامي</li>
+          <li>تغطية أبرز التشريعات والتعديلات القانونية الجديدة</li>
+          <li>محتوى موسمي: قانون العمل مع نهاية العام، قانون الإرث، التراخيص التجارية</li>
+          <li>تهنئة المتابعين بالمناسبات الوطنية والدينية</li>
+          <li>الذكرى السنوية لتأسيس المكتب — جدول الإنجازات</li>
+          <li>محتوى عيد رمضان: حقوق العامل في رمضان</li>
+          <li>نصائح قانونية لبداية العام التجاري الجديد</li>
+          <li>ملخص أبرز القضايا القانونية العامة للعام المنصرم</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="gold-divider">
+
+  <!-- ── 3. REELS & VIDEO IDEAS ── -->
+  <section class="section">
+    <h2 class="section-title"><span class="sec-icon">🎬</span> أفكار Reels وفيديوهات قصيرة</h2>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3><span class="icon">🎥</span> فيديوهات تعليمية سريعة</h3>
+        <ul>
+          <li>60 ثانية: "ما الفرق بين التوكيل العام والخاص؟"</li>
+          <li>"3 أخطاء تقع فيها عند التوقيع على العقود"</li>
+          <li>"متى يحق لك إنهاء عقد الإيجار؟"</li>
+          <li>"حقوق الموظف عند الفصل التعسفي"</li>
+          <li>"ما الوثائق التي تحتاجها لرفع دعوى؟"</li>
+          <li>"كيف تحمي نفسك قانونياً في الشراكات التجارية"</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">🎭</span> فيديوهات درامية تمثيلية</h3>
+        <ul>
+          <li>مشهد: موكل يوقع عقداً بدون قراءة — النتيجة الكارثية</li>
+          <li>مشهد: لماذا يجب استشارة محامٍ قبل الشراكة؟</li>
+          <li>ردود فعل الناس على حقائق قانونية مفاجئة</li>
+          <li>محاكاة جلسة محكمة توضيحية بطريقة مبسطة</li>
+          <li>مشهد: الفرق بين من استشار محامياً ومن لم يفعل</li>
+          <li>سيناريو: "لو عدت بالزمن" — قرارات قانونية صحيحة</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">🔴</span> بث مباشر وفيديو أطول</h3>
+        <ul>
+          <li>جلسة "اسأل المحامي" — أسئلة مباشرة من المتابعين</li>
+          <li>ندوة إلكترونية عن الاستثمار العقاري والضمانات القانونية</li>
+          <li>حلقة نقاش: قانون العمل في ظل التحولات الاقتصادية</li>
+          <li>شرح تعديل قانوني جديد لحظة صدوره</li>
+          <li>جولة داخل مكتب المحاماة وتقديم الفريق</li>
+          <li>لقاء مع خبير مالي أو محاسب حول القضايا التجارية</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="icon">✂️</span> تقنيات إنتاج الفيديو الاحترافي</h3>
+      <ul>
+        <li>ابدأ دائماً بـ Hook قوي في الثانية الأولى: "لو فعلت هذا الخطأ ستخسر..."</li>
+        <li>استخدم خلفية رسمية: مكتبة قانونية أو لقطات من المكتب أو أرضية محايدة أنيقة</li>
+        <li>الترجمة العربية الفصحى مع تعليق بالعامية المفهومة تضاعف الوصول</li>
+        <li>أضف موسيقى خلفية هادئة وموشن جرافيك للمصطلحات القانونية</li>
+        <li>اختم كل فيديو بـ CTA واضح: "اتصل بنا" أو "اترك سؤالك في التعليقات"</li>
+        <li>تصوير عمودي 9:16 للـ Reels وأفقي 16:9 لـ YouTube ولينكدإن</li>
+        <li>الحفاظ على الهوية البصرية: ألوان المكتب وشعاره في كل فيديو</li>
+        <li>لا تتجاوز 90 ثانية للفيديو القصير — التركيز والإيجاز سلاحك</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="gold-divider">
+
+  <!-- ── 4. AD CAMPAIGNS ── -->
+  <section class="section">
+    <h2 class="section-title"><span class="sec-icon">📢</span> الحملات الإعلانية</h2>
+
+    <!-- Campaign 1 -->
+    <div class="campaign-card">
+      <div class="campaign-header">
+        <span class="camp-icon">⚖️</span>
+        <h3>الحملة الأولى: "حقوقك في يدك"</h3>
+      </div>
+      <div class="campaign-body">
+        <div class="camp-meta">
+          <div class="camp-meta-item">
+            <label>الجمهور المستهدف</label>
+            <p>أفراد من 25-50 سنة، موظفون ومواطنون يواجهون نزاعات يومية</p>
+          </div>
+          <div class="camp-meta-item">
+            <label>الفكرة الإبداعية</label>
+            <p>توعية بحقوق الأفراد في مواقف الحياة اليومية بأسلوب مبسط وجاذب</p>
+          </div>
+        </div>
+        <div class="camp-ad-text">
+          "هل تعلم أن هناك حقوقاً قانونية كفلها لك النظام لا تزال مجهولة لدى كثيرين؟ في مكتبنا، نؤمن أن المعرفة أقوى سلاح. نحن هنا لنكون دليلك القانوني في كل خطوة — قبل أن تحتاج المحكمة، اعرف حقوقك."
+        </div>
+        <span class="cta-tag">📞 احجز استشارتك المجانية الآن</span>
+      </div>
+    </div>
+
+    <!-- Campaign 2 -->
+    <div class="campaign-card">
+      <div class="campaign-header">
+        <span class="camp-icon">🏢</span>
+        <h3>الحملة الثانية: "شريكك القانوني في التجارة"</h3>
+      </div>
+      <div class="campaign-body">
+        <div class="camp-meta">
+          <div class="camp-meta-item">
+            <label>الجمهور المستهدف</label>
+            <p>أصحاب الشركات والمستثمرون والشركاء التجاريون</p>
+          </div>
+          <div class="camp-meta-item">
+            <label>الفكرة الإبداعية</label>
+            <p>إبراز قيمة الحماية القانونية المبكرة في المشاريع التجارية قبل وقوع النزاعات</p>
+          </div>
+        </div>
+        <div class="camp-ad-text">
+          "كل شركة ناجحة بنيت على أساس قانوني متين. العقود الصحيحة، الشراكات المحمية، والحقوق الموثقة — هذا ما يميز المشاريع التي تدوم عن تلك التي تتعثر. دعنا نكون الحماية القانونية التي يحتاجها نجاحك."
+        </div>
+        <span class="cta-tag">🤝 تواصل معنا لحماية مشروعك</span>
+      </div>
+    </div>
+
+    <!-- Campaign 3 -->
+    <div class="campaign-card">
+      <div class="campaign-header">
+        <span class="camp-icon">🏠</span>
+        <h3>الحملة الثالثة: "صفقتك العقارية في مأمن"</h3>
+      </div>
+      <div class="campaign-body">
+        <div class="camp-meta">
+          <div class="camp-meta-item">
+            <label>الجمهور المستهدف</label>
+            <p>مشترو العقارات والمستأجرون وأصحاب الأراضي والمطورون العقاريون</p>
+          </div>
+          <div class="camp-meta-item">
+            <label>الفكرة الإبداعية</label>
+            <p>التحذير من مخاطر العقارات غير الموثقة وتسليط الضوء على الحل القانوني</p>
+          </div>
+        </div>
+        <div class="camp-ad-text">
+          "قبل أن توقع على أي عقد عقاري — ابيعاً كان أم شراءً أم إيجاراً — اعرف أن ما لم يُكتب قانونياً لم يحدث. لا تدع حلمك في العقار يتحول إلى مشكلة قانونية. مكتبنا يراجع كل التفاصيل لتحصل على حقك كاملاً."
+        </div>
+        <span class="cta-tag">📋 راجع عقدك معنا قبل التوقيع</span>
+      </div>
+    </div>
+
+    <!-- Campaign 4 -->
+    <div class="campaign-card">
+      <div class="campaign-header">
+        <span class="camp-icon">👨‍👩‍👧</span>
+        <h3>الحملة الرابعة: "الأسرة في أمان قانوني"</h3>
+      </div>
+      <div class="campaign-body">
+        <div class="camp-meta">
+          <div class="camp-meta-item">
+            <label>الجمهور المستهدف</label>
+            <p>الأسر في قضايا الأحوال الشخصية والزواج والطلاق والحضانة والإرث</p>
+          </div>
+          <div class="camp-meta-item">
+            <label>الفكرة الإبداعية</label>
+            <p>التعامل مع قضايا الأسرة بحساسية عالية وتقديم الدعم القانوني الإنساني</p>
+          </div>
+        </div>
+        <div class="camp-ad-text">
+          "نتفهم أن قضايا الأسرة ليست مجرد ملفات قانونية — هي حياة وعلاقات ومستقبل أبناء. في مكتبنا، نتعامل مع قضيتك بالاحترافية المطلوبة والحساسية الإنسانية اللازمة. نسعى دائماً للحل الأمثل الذي يصون كرامة الجميع."
+        </div>
+        <span class="cta-tag">💬 تحدث مع محامٍ متخصص بسرية تامة</span>
+      </div>
+    </div>
+
+    <!-- Campaign 5 -->
+    <div class="campaign-card">
+      <div class="campaign-header">
+        <span class="camp-icon">💼</span>
+        <h3>الحملة الخامسة: "خبرة تتحدث"</h3>
+      </div>
+      <div class="campaign-body">
+        <div class="camp-meta">
+          <div class="camp-meta-item">
+            <label>الجمهور المستهدف</label>
+            <p>جميع الفئات — حملة توعوية عامة لتعزيز الهوية والسمعة المهنية للمكتب</p>
+          </div>
+          <div class="camp-meta-item">
+            <label>الفكرة الإبداعية</label>
+            <p>إبراز عمق التجربة وطول الخبرة القانونية للمكتب كعلامة تجارية موثوقة</p>
+          </div>
+        </div>
+        <div class="camp-ad-text">
+          "سنوات من العمل القانوني علمتنا شيئاً واحداً: ليست القضية هي من تُحل، بل الإنسان هو من يُنصف. في كل ملف نتولاه، نضع ثقل خبرتنا وعمق معرفتنا في خدمة حق واحد — حقك."
+        </div>
+        <span class="cta-tag">⚖️ اختر الخبرة، اختر الثقة — تواصل معنا</span>
+      </div>
+    </div>
+
+    <!-- Campaign 6 -->
+    <div class="campaign-card">
+      <div class="campaign-header">
+        <span class="camp-icon">🌐</span>
+        <h3>الحملة السادسة: "استشارة الآن"</h3>
+      </div>
+      <div class="campaign-body">
+        <div class="camp-meta">
+          <div class="camp-meta-item">
+            <label>الجمهور المستهدف</label>
+            <p>أشخاص في مرحلة البحث والتفكير — يحتاجون استشارة أولى لاتخاذ قرار</p>
+          </div>
+          <div class="camp-meta-item">
+            <label>الفكرة الإبداعية</label>
+            <p>تخفيض الحاجز النفسي للتواصل الأول — تقديم الاستشارة الأولى بدون تعقيد</p>
+          </div>
+        </div>
+        <div class="camp-ad-text">
+          "أحياناً سؤال واحد يغير كل شيء. لا تنتظر حتى تتعقد الأمور — تحدث معنا الآن واحصل على توجيه قانوني واضح يساعدك على اتخاذ القرار الصحيح. أول خطوة هي الأصعب، ونحن هنا لنجعلها سهلة."
+        </div>
+        <span class="cta-tag">📲 تواصل الآن — نجيبك في أسرع وقت</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="gold-divider">
+
+  <!-- ── 5. READY POSTS ── -->
+  <section class="section">
+    <h2 class="section-title"><span class="sec-icon">✍️</span> منشورات جاهزة للنشر</h2>
+
+    <div class="post-card">
+      <div class="post-label">منشور تعليمي — إنستغرام / فيسبوك</div>
+      <p>
+        ⚖️ هل تعلم؟<br><br>
+        كثيرون يوقعون عقوداً دون قراءتها كاملة، ثم يفاجأون ببنود ضارة لم ينتبهوا إليها.<br><br>
+        قبل أي توقيع — خذ وقتك، اقرأ كل سطر، واستشر متخصصاً قانونياً إذا كانت القضية مهمة.<br><br>
+        حقوقك تستحق دقائق من التأني أكثر من سنوات من النزاع.
+      </p>
+      <div class="post-tags">
+        <span>#حقوقك_تهمنا</span><span>#استشارة_قانونية</span><span>#محاماة_احترافية</span><span>#مكتب_محاماة</span>
+      </div>
+    </div>
+
+    <div class="post-card">
+      <div class="post-label">منشور تحفيزي — لينكدإن</div>
+      <p>
+        🏛️ في عالم الأعمال، الشريك القانوني الصحيح ليس رفاهية — إنه ضرورة استراتيجية.<br><br>
+        قبل أن تبدأ مشروعاً، تدخل شراكة، أو توقع صفقة: تأكد أن أساسك القانوني راسخ.<br><br>
+        الشركات التي تستثمر في الحماية القانونية المبكرة تتجنب 80% من النزاعات المستقبلية.<br><br>
+        🤝 نحن في مكتبنا شركاؤك القانونيون في كل مرحلة من مراحل نموك.
+      </p>
+      <div class="post-tags">
+        <span>#قانون_الأعمال</span><span>#شركات</span><span>#استثمار</span><span>#محاماة_تجارية</span>
+      </div>
+    </div>
+
+    <div class="post-card">
+      <div class="post-label">منشور توعوي — تويتر / X</div>
+      <p>
+        📌 ثلاثة أخطاء قانونية شائعة تكلف أصحابها الكثير:<br><br>
+        1️⃣ الدخول في شراكة تجارية بدون عقد موثق<br>
+        2️⃣ الإيجار بدون تسجيل رسمي<br>
+        3️⃣ تأجيل توثيق الإرث حتى تتعقد الأمور<br><br>
+        الحل في ثلاث كلمات: استشر قبل تندم.
+      </p>
+      <div class="post-tags">
+        <span>#قانون</span><span>#حقوق</span><span>#محامي</span><span>#نصائح_قانونية</span>
+      </div>
+    </div>
+
+    <div class="post-card">
+      <div class="post-label">منشور قصة نجاح — كل المنصات</div>
+      <p>
+        ✨ رسالة تلقيناها الأسبوع الماضي تجعلنا فخورين بما نقوم به:<br><br>
+        "جئت إليكم وأنا في أشد اللحظات صعوبة. لم تكونوا مجرد محامين — كنتم السند والتوجيه في وقت احتجت فيه ذلك كثيراً. شكراً على الاحترافية والإنسانية معاً."<br><br>
+        هذا ما يدفعنا للاستمرار — الإنصاف قبل أي شيء آخر. ⚖️
+      </p>
+      <div class="post-tags">
+        <span>#ثقة_عملائنا</span><span>#احترافية</span><span>#مكتب_محاماة_متميز</span>
+      </div>
+    </div>
+
+    <div class="post-card">
+      <div class="post-label">منشور معلوماتي — إنستغرام ستوري</div>
+      <p>
+        🔍 هل تعلم أن لك الحق في:<br><br>
+        ✅ الاطلاع على ملفك الجنائي<br>
+        ✅ رفض أي تفتيش بدون أمر قضائي<br>
+        ✅ التمثيل القانوني منذ لحظة التوقيف<br>
+        ✅ الصمت حتى حضور محاميك<br>
+        ✅ استئناف أي حكم ابتدائي<br><br>
+        حقوقك موجودة — المهم أن تعرفها. 💛
+      </p>
+      <div class="post-tags">
+        <span>#حقوق_قانونية</span><span>#وعي_قانوني</span><span>#تثقيف_قانوني</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="gold-divider">
+
+  <!-- ── 6. IDENTITY IDEAS ── -->
+  <section class="section">
+    <h2 class="section-title"><span class="sec-icon">🎨</span> أفكار لتحسين هوية المكتب</h2>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3><span class="icon">🎭</span> الهوية البصرية</h3>
+        <ul>
+          <li>اعتماد لوحة ألوان ثابتة: كحلي + ذهبي + أبيض في جميع المواد</li>
+          <li>شعار عصري يجمع بين رمز العدالة والخط العربي الأنيق</li>
+          <li>تصميم قوالب موحدة لجميع منشورات السوشال ميديا</li>
+          <li>بطاقة أعمال ذهبية اللمسة مع ورق ذي رأسية أنيقة</li>
+          <li>استخدام خط عربي راقٍ: Cairo أو Tajawal أو Lato العربي</li>
+          <li>صور احترافية عالية الجودة لفريق المكتب بخلفية موحدة</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">✉️</span> التواصل المؤسسي</h3>
+        <ul>
+          <li>توقيع بريد إلكتروني احترافي يتضمن الشعار والتخصصات</li>
+          <li>قوالب رسائل واتساب وسماتية مهنية للتواصل مع الموكلين</li>
+          <li>تصميم مظاريف وملفات وثائق بالهوية البصرية للمكتب</li>
+          <li>بيان مكتبي (Brochure) ثنائي اللغة للعملاء الدوليين</li>
+          <li>ورق رسمي رأسيته تحمل جميع بيانات التواصل والتراخيص</li>
+          <li>لافتات مكتب داخلية وخارجية بتصميم فاخر يعكس الاحترافية</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">🌟</span> القيم والرسائل المؤسسية</h3>
+        <ul>
+          <li>صياغة بيان مهمة قوي يعكس فلسفة المكتب الحقوقية</li>
+          <li>تحديد القيم الجوهرية: النزاهة، الخبرة، السرية، الإنسانية</li>
+          <li>Slogan مميز يرسخ في ذاكرة العميل المحتمل</li>
+          <li>قصة المكتب (Brand Story) تُروى بشكل مقنع ومؤثر</li>
+          <li>الوعود المؤسسية الواقعية التي تُبنى عليها ثقة الموكلين</li>
+          <li>تمييز واضح عن المنافسين من حيث التخصص وطريقة العمل</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">📦</span> التجربة الكاملة للموكل</h3>
+        <ul>
+          <li>تجهيز استقبال المكتب بلمسات تعكس الفخامة والثقة</li>
+          <li>إنشاء ملف ترحيبي يُسلَّم لكل موكل جديد</li>
+          <li>نظام متابعة دوري للموكلين ومراسلات مهنية منتظمة</li>
+          <li>شكر الموكلين بعد إغلاق الملف برسالة تقدير مؤسسية</li>
+          <li>استطلاعات رضا دورية لتطوير الخدمة باستمرار</li>
+          <li>هدايا مناسبة واحترافية في المناسبات الرسمية</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="gold-divider">
+
+  <!-- ── 7. WEBSITE IDEAS ── -->
+  <section class="section">
+    <h2 class="section-title"><span class="sec-icon">🌐</span> أفكار لتطوير الموقع الإلكتروني</h2>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3><span class="icon">🏠</span> الصفحة الرئيسية</h3>
+        <ul>
+          <li>Hero قوي مع شعار وبيان مهمة ومسار واضح للزائر</li>
+          <li>أرقام تثير الثقة: عدد القضايا، سنوات الخبرة، المجالات</li>
+          <li>قسم للتخصصات القانونية مع أيقونات وشروح موجزة</li>
+          <li>شهادات موكلين أو تقييمات Google بارزة في الصفحة</li>
+          <li>CTA واضح: "احجز استشارة" في أعلى الصفحة وأسفلها</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">✍️</span> مدونة قانونية</h3>
+        <ul>
+          <li>مقالات SEO عن المشاكل القانونية الشائعة</li>
+          <li>أخبار وتحديثات التشريعات والقوانين الجديدة</li>
+          <li>أدلة إرشادية: "كيف ترفع دعوى؟" خطوة بخطوة</li>
+          <li>ملفات PDF للتنزيل: قوائم مراجعة وثقافة قانونية</li>
+          <li>محرك بحث داخل المدونة لسهولة إيجاد المحتوى</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">📞</span> التحويل والتواصل</h3>
+        <ul>
+          <li>نموذج استشارة سريع في كل صفحة (اسم + مشكلة + رقم)</li>
+          <li>زر واتساب عائم ثابت في الموقع</li>
+          <li>خريطة الموقع وساعات العمل واضحة</li>
+          <li>Live Chat أو Chatbot للرد الفوري على الأسئلة</li>
+          <li>صفحة FAQ تجيب على 20+ سؤال شائع تلقائياً</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="icon">🔍</span> تحسين محركات البحث (SEO)</h3>
+      <ul>
+        <li>استهداف كلمات مفتاحية محلية: "محامي في [المدينة]"، "مكتب محاماة [التخصص]"</li>
+        <li>إنشاء صفحة مخصصة لكل تخصص قانوني مع محتوى مفصل</li>
+        <li>تسجيل المكتب في Google Business Profile مع صور وتقييمات</li>
+        <li>بناء روابط خلفية من مواقع قانونية وأخبارية موثوقة</li>
+        <li>تحسين سرعة الموقع وتجربة الجوال لرفع التصنيف</li>
+        <li>Schema Markup للمحامين يجعل ظهورك في نتائج البحث أقوى</li>
+        <li>إنشاء صفحات أسئلة وأجوبة تستهدف بحث الصوت والـ Featured Snippets</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="gold-divider">
+
+  <!-- ── 8. 30-DAY PLAN ── -->
+  <section class="section">
+    <h2 class="section-title"><span class="sec-icon">📅</span> خطة النشر لمدة 30 يوماً</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>اليوم</th>
+            <th>نوع المحتوى</th>
+            <th>الفكرة</th>
+            <th>المنصة</th>
+            <th>الهدف</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="day-num">1</td>
+            <td><span class="type-tag t-post">منشور تعريفي</span></td>
+            <td>تقديم المكتب: التخصصات، الرؤية، فريق العمل</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-fb">FB</span> <span class="plt-tag plt-li">LI</span></td>
+            <td>بناء الوعي بالمكتب</td>
+          </tr>
+          <tr>
+            <td class="day-num">2</td>
+            <td><span class="type-tag t-reel">Reel</span></td>
+            <td>فيديو قصير: "3 أشياء يجب أن تعرفها قبل توقيع أي عقد"</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-tik">TikTok</span></td>
+            <td>وصول عضوي — تعليم</td>
+          </tr>
+          <tr>
+            <td class="day-num">3</td>
+            <td><span class="type-tag t-tip">نصيحة</span></td>
+            <td>منشور: "هل تعلم أن لك حق الصمت حتى حضور محاميك؟"</td>
+            <td><span class="plt-tag plt-tw">X</span> <span class="plt-tag plt-fb">FB</span></td>
+            <td>توعية — تفاعل</td>
+          </tr>
+          <tr>
+            <td class="day-num">4</td>
+            <td><span class="type-tag t-story">ستوري</span></td>
+            <td>استفتاء: "هل تعرف الفرق بين التوكيل العام والخاص؟"</td>
+            <td><span class="plt-tag plt-ig">IG</span></td>
+            <td>تفاعل — بيانات جمهور</td>
+          </tr>
+          <tr>
+            <td class="day-num">5</td>
+            <td><span class="type-tag t-post">منشور</span></td>
+            <td>شرح مبسط: الفرق بين الدعوى المدنية والجنائية</td>
+            <td><span class="plt-tag plt-fb">FB</span> <span class="plt-tag plt-li">LI</span></td>
+            <td>بناء السلطة القانونية</td>
+          </tr>
+          <tr>
+            <td class="day-num">6</td>
+            <td><span class="type-tag t-reel">Reel</span></td>
+            <td>فيديو: "حقوق الموظف عند الفصل التعسفي — ما لا يخبرك به أحد"</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-yt">YT</span></td>
+            <td>وصول واسع — ثقة</td>
+          </tr>
+          <tr>
+            <td class="day-num">7</td>
+            <td><span class="type-tag t-poll">استفتاء</span></td>
+            <td>سؤال: "ما أكثر مشكلة قانونية تواجهها؟" (خيارات 4)</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-tw">X</span></td>
+            <td>فهم الجمهور — تفاعل</td>
+          </tr>
+          <tr>
+            <td class="day-num">8</td>
+            <td><span class="type-tag t-post">محتوى تحفيزي</span></td>
+            <td>منشور عن قيمة الاستشارة المبكرة قبل وقوع المشاكل</td>
+            <td><span class="plt-tag plt-li">LI</span> <span class="plt-tag plt-fb">FB</span></td>
+            <td>توليد عملاء محتملين</td>
+          </tr>
+          <tr>
+            <td class="day-num">9</td>
+            <td><span class="type-tag t-story">ستوري</span></td>
+            <td>كواليس المكتب: يوم في حياة فريق القانون</td>
+            <td><span class="plt-tag plt-ig">IG</span></td>
+            <td>بناء ألفة وثقة</td>
+          </tr>
+          <tr>
+            <td class="day-num">10</td>
+            <td><span class="type-tag t-tip">نصيحة</span></td>
+            <td>منشور: "5 بنود لا يجب أن يخلو منها عقد الإيجار"</td>
+            <td><span class="plt-tag plt-fb">FB</span> <span class="plt-tag plt-ig">IG</span></td>
+            <td>تثقيف — ثقة عقارية</td>
+          </tr>
+          <tr>
+            <td class="day-num">11</td>
+            <td><span class="type-tag t-reel">Reel</span></td>
+            <td>فيديو تمثيلي: "قبل وبعد" — قضية مع محامٍ وبدونه</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-tik">TikTok</span></td>
+            <td>وعي — تحويل</td>
+          </tr>
+          <tr>
+            <td class="day-num">12</td>
+            <td><span class="type-tag t-post">تعريف فريق</span></td>
+            <td>تسليط الضوء على أحد المحامين وتخصصه وخبرته</td>
+            <td><span class="plt-tag plt-li">LI</span> <span class="plt-tag plt-ig">IG</span></td>
+            <td>بناء ثقة شخصية</td>
+          </tr>
+          <tr>
+            <td class="day-num">13</td>
+            <td><span class="type-tag t-qa">أسئلة وأجوبة</span></td>
+            <td>الإجابة على أبرز 5 أسئلة وردت من المتابعين هذا الأسبوع</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-fb">FB</span></td>
+            <td>تفاعل — خدمة جمهور</td>
+          </tr>
+          <tr>
+            <td class="day-num">14</td>
+            <td><span class="type-tag t-story">ستوري</span></td>
+            <td>اقتباس قانوني ملهم + سؤال: "ما رأيك؟"</td>
+            <td><span class="plt-tag plt-ig">IG</span></td>
+            <td>تفاعل عاطفي</td>
+          </tr>
+          <tr>
+            <td class="day-num">15</td>
+            <td><span class="type-tag t-live">بث مباشر</span></td>
+            <td>جلسة "اسأل المحامي" — إجابة على أسئلة قانونية عامة</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-fb">FB</span></td>
+            <td>ثقة — وصول مباشر</td>
+          </tr>
+          <tr>
+            <td class="day-num">16</td>
+            <td><span class="type-tag t-tip">نصيحة</span></td>
+            <td>منشور: "6 أخطاء يرتكبها أصحاب الشركات قانونياً"</td>
+            <td><span class="plt-tag plt-li">LI</span> <span class="plt-tag plt-fb">FB</span></td>
+            <td>استهداف B2B</td>
+          </tr>
+          <tr>
+            <td class="day-num">17</td>
+            <td><span class="type-tag t-reel">Reel</span></td>
+            <td>فيديو: "ما الذي تفعله إذا تلقيت إنذاراً قانونياً؟"</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-yt">YT</span></td>
+            <td>توعية — تحويل</td>
+          </tr>
+          <tr>
+            <td class="day-num">18</td>
+            <td><span class="type-tag t-post">شهادة موكل</span></td>
+            <td>شهادة تقدير من موكل (بدون تفاصيل قانونية) مع صورة تعبيرية</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-fb">FB</span></td>
+            <td>بناء الثقة الاجتماعية</td>
+          </tr>
+          <tr>
+            <td class="day-num">19</td>
+            <td><span class="type-tag t-poll">استفتاء</span></td>
+            <td>استفتاء: "هل سبق أن احتجت لمحامٍ؟ كيف كانت تجربتك؟"</td>
+            <td><span class="plt-tag plt-tw">X</span> <span class="plt-tag plt-ig">IG</span></td>
+            <td>فهم الجمهور</td>
+          </tr>
+          <tr>
+            <td class="day-num">20</td>
+            <td><span class="type-tag t-tip">معلومة</span></td>
+            <td>منشور: "كيف يتم توارث الأصول التجارية؟ ما يجب أن تعرفه"</td>
+            <td><span class="plt-tag plt-fb">FB</span> <span class="plt-tag plt-li">LI</span></td>
+            <td>توعية مالية قانونية</td>
+          </tr>
+          <tr>
+            <td class="day-num">21</td>
+            <td><span class="type-tag t-reel">Reel</span></td>
+            <td>فيديو: "5 حقوق لا تعرفها كمستأجر"</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-tik">TikTok</span></td>
+            <td>وصول شريحة عقارية</td>
+          </tr>
+          <tr>
+            <td class="day-num">22</td>
+            <td><span class="type-tag t-story">ستوري</span></td>
+            <td>سلايد تعليمي: "5 خطوات لرفع دعوى" بطريقة بسيطة</td>
+            <td><span class="plt-tag plt-ig">IG</span></td>
+            <td>توعية إجرائية</td>
+          </tr>
+          <tr>
+            <td class="day-num">23</td>
+            <td><span class="type-tag t-post">منشور تجاري</span></td>
+            <td>خدمات المكتب للشركات: الصياغة، المراجعة، التمثيل القانوني</td>
+            <td><span class="plt-tag plt-li">LI</span> <span class="plt-tag plt-fb">FB</span></td>
+            <td>توليد عملاء B2B</td>
+          </tr>
+          <tr>
+            <td class="day-num">24</td>
+            <td><span class="type-tag t-qa">أسئلة وأجوبة</span></td>
+            <td>إجابات على أسئلة المتابعين عبر الستوري بطريقة مرئية</td>
+            <td><span class="plt-tag plt-ig">IG</span></td>
+            <td>تفاعل — مصداقية</td>
+          </tr>
+          <tr>
+            <td class="day-num">25</td>
+            <td><span class="type-tag t-inf">إنفوغرافيك</span></td>
+            <td>إنفوغرافيك: "مراحل القضية القضائية من الدعوى حتى الحكم"</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-li">LI</span></td>
+            <td>توعية إجرائية — تشارك</td>
+          </tr>
+          <tr>
+            <td class="day-num">26</td>
+            <td><span class="type-tag t-reel">Reel</span></td>
+            <td>فيديو تحفيزي: قصة نجاح مبهمة — "تغير كل شيء بعد استشارة واحدة"</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-yt">YT</span></td>
+            <td>ثقة عاطفية — تحويل</td>
+          </tr>
+          <tr>
+            <td class="day-num">27</td>
+            <td><span class="type-tag t-tip">نصيحة أسبوعية</span></td>
+            <td>منشور: "كيف تحمي عملك من الملكية الفكرية المسروقة؟"</td>
+            <td><span class="plt-tag plt-li">LI</span> <span class="plt-tag plt-fb">FB</span></td>
+            <td>توعية تجارية</td>
+          </tr>
+          <tr>
+            <td class="day-num">28</td>
+            <td><span class="type-tag t-story">ستوري</span></td>
+            <td>استفتاء مرح: "أي قضية تظنها الأصعب؟" مع إجابة مفاجئة</td>
+            <td><span class="plt-tag plt-ig">IG</span></td>
+            <td>تفاعل ومتعة</td>
+          </tr>
+          <tr>
+            <td class="day-num">29</td>
+            <td><span class="type-tag t-post">ملخص شهري</span></td>
+            <td>أبرز ما نشرناه هذا الشهر + أكثر سؤال ورد لنا</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-fb">FB</span></td>
+            <td>مراجعة — ولاء</td>
+          </tr>
+          <tr>
+            <td class="day-num">30</td>
+            <td><span class="type-tag t-live">بث أو فيديو</span></td>
+            <td>شكر المتابعين + استعراض خدمات المكتب + دعوة للتواصل</td>
+            <td><span class="plt-tag plt-ig">IG</span> <span class="plt-tag plt-fb">FB</span> <span class="plt-tag plt-li">LI</span></td>
+            <td>تحويل — علاقة دائمة</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr class="gold-divider">
+
+  <!-- ── 9. AD TEXTS ── -->
+  <section class="section">
+    <h2 class="section-title"><span class="sec-icon">📝</span> نصوص إعلانية قصيرة جاهزة</h2>
+
+    <div class="grid-2">
+      <div>
+        <div class="ad-text-card">
+          <div class="ad-num">نص إعلاني #1 — عام</div>
+          <p>حقوقك تبدأ من معرفتها. في مكتب المحاماة المتخصص، كل قضية تُعامَل بدقة واهتمام كامل. <strong>تواصل معنا اليوم.</strong></p>
+        </div>
+        <div class="ad-text-card">
+          <div class="ad-num">نص إعلاني #2 — عقاري</div>
+          <p>قبل أن توقع عقد البيع أو الإيجار — دعنا نراجعه معك. لا صفقة آمنة بدون توثيق قانوني صحيح. <strong>احجز مراجعتك الآن.</strong></p>
+        </div>
+        <div class="ad-text-card">
+          <div class="ad-num">نص إعلاني #3 — تجاري</div>
+          <p>مشروعك يستحق حماية قانونية حقيقية. من عقود الشراكة إلى تسجيل العلامة التجارية — نحن شريكك القانوني في كل خطوة.</p>
+        </div>
+        <div class="ad-text-card">
+          <div class="ad-num">نص إعلاني #4 — عمالي</div>
+          <p>فُصلت من العمل أو تتعرض لضغوط غير مشروعة؟ حقوقك محفوظة بالقانون — اعرفها واطالب بها. نحن معك.</p>
+        </div>
+        <div class="ad-text-card">
+          <div class="ad-num">نص إعلاني #5 — أسري</div>
+          <p>في أصعب اللحظات، أنت بحاجة لمن يفهم قضيتك القانونية ومشاعرك الإنسانية معاً. نحن هنا لكلاهما.</p>
+        </div>
+      </div>
+      <div>
+        <div class="ad-text-card">
+          <div class="ad-num">نص إعلاني #6 — استشارة</div>
+          <p>سؤال واحد قد يوفر عليك سنوات من النزاع. استشارة قانونية مبكرة ليست تكلفة — هي استثمار في مستقبلك.</p>
+        </div>
+        <div class="ad-text-card">
+          <div class="ad-num">نص إعلاني #7 — ثقة</div>
+          <p>أكثر من [X] سنة من الخبرة القانونية في خدمتك. الملفات تُغلق، الحقوق تُصان، الثقة تُبنى. هذا ما نفعله كل يوم.</p>
+        </div>
+        <div class="ad-text-card">
+          <div class="ad-num">نص إعلاني #8 — للشركات</div>
+          <p>شركتك تحتاج محامياً يفهم لغة الأعمال قبل لغة القانون. خدماتنا القانونية المؤسسية مصممة للنمو وليس فقط للدفاع.</p>
+        </div>
+        <div class="ad-text-card">
+          <div class="ad-num">نص إعلاني #9 — رقمي / واتساب</div>
+          <p>لا وقت للجلوس في مكتب؟ تواصل معنا عبر واتساب، واحصل على توجيه قانوني أولي في أقل من 24 ساعة. 📲</p>
+        </div>
+        <div class="ad-text-card">
+          <div class="ad-num">نص إعلاني #10 — ختامي</div>
+          <p>المشكلة الصغيرة التي تتجاهلها اليوم قد تصبح أزمة غداً. المحامي الجيد ليس من تلجأ إليه عند الأزمة — بل من يمنعها من البداية.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="gold-divider">
+
+  <!-- ── 10. PROFESSIONAL ETHICS ── -->
+  <section class="section">
+    <h2 class="section-title"><span class="sec-icon">⚖️</span> التوصيات المهنية والأخلاقية</h2>
+
+    <div class="ethics-box">
+      <h3>🏛️ مبادئ التسويق القانوني الأخلاقي — معايير واجبة الاتباع</h3>
+      <ul>
+        <li>لا تعد بنتائج — التسويق القانوني يُبرز الخبرة والمنهجية، ولا يضمن أحكاماً أو نتائج محددة</li>
+        <li>احفظ السرية المطلقة — لا تُشر أبداً إلى هوية الموكلين أو تفاصيل قضاياهم بأي شكل</li>
+        <li>صدق التخصص — سوّق فقط للمجالات التي يمتلك فيها المكتب خبرة حقيقية وكفاءة موثقة</li>
+        <li>وضوح الرسوم — إذا أشرت للأتعاب فكن دقيقاً وواضحاً لتجنب سوء الفهم القانوني</li>
+        <li>التمييز المحظور — لا يجوز توجيه تسويق يستغل ضعف أو يأس أو ظروف الأفراد</li>
+        <li>مراجعة المحتوى قانونياً — كل محتوى ينشره المكتب يجب أن يراجعه محامٍ لضمان دقته</li>
+        <li>لا مقارنات مهينة — يحظر التقليل من مكاتب أو محامين آخرين في أي مادة تسويقية</li>
+        <li>شهادات حقيقية فقط — الشهادات المنشورة يجب أن تكون حقيقية وبإذن صريح من أصحابها</li>
+        <li>الامتثال للوائح — اتبع قواعد نقابة المحامين المعتمدة بشأن الإعلان والترويج</li>
+        <li>الحفاظ على الكرامة المهنية — كل محتوى ينشر يجب أن يليق بمكانة المهنة القانونية الرفيعة</li>
+      </ul>
+    </div>
+
+    <div class="tip-grid" style="margin-top:20px;">
+      <div class="tip-item">
+        <span class="tip-icon">🔒</span>
+        <h4>السرية أولاً</h4>
+        <p>لا تشارك قصص النجاح مطلقاً إذا كانت تكشف هوية موكلك أو تفاصيل قضيته. حتى الثناء العام يجب أن يظل مبهماً.</p>
+      </div>
+      <div class="tip-item">
+        <span class="tip-icon">📋</span>
+        <h4>الدقة القانونية</h4>
+        <p>تحقق من صحة كل معلومة قانونية تنشرها. خطأ واحد في محتوى تعليمي قد يضر بسمعتك أكثر مما ينفع.</p>
+      </div>
+      <div class="tip-item">
+        <span class="tip-icon">⚖️</span>
+        <h4>التوازن والحياد</h4>
+        <p>قدّم معلومات متوازنة وموضوعية. تجنب التحيز وأبرز القضايا من زوايا مختلفة لبناء مصداقية علمية حقيقية.</p>
+      </div>
+      <div class="tip-item">
+        <span class="tip-icon">🌐</span>
+        <h4>الحضور المتسق</h4>
+        <p>الاتساق أهم من الكثافة. منشور واحد أسبوعياً بجودة عالية خير من سبعة منشورات سطحية تضر بالصورة المهنية.</p>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /container -->
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="site-footer">
+  <p>⚖️ تقرير تسويقي استراتيجي — مُعدّ لمكتب محاماة متخصص</p>
+  <p style="margin-top:8px;">جميع المحتويات مُصممة وفق <span>معايير أخلاقيات مهنة المحاماة</span> — لا تتضمن وعوداً بنتائج أو ضمانات قانونية</p>
+</footer>
+
+<!-- ═══════════════ TOAST ═══════════════ -->
+<div id="toast">✅ تم نسخ ملخص الأفكار بنجاح!</div>
+
+<!-- ═══════════════ JAVASCRIPT ═══════════════ -->
+<script>
+  function printPage() {
+    window.print();
+  }
+
+  function copySummary() {
+    const summary = `
+أفكار تسويقية استراتيجية لمكتب محاماة — ملخص تنفيذي
+════════════════════════════════════════════════
+
+⚖️ ركائز التسويق القانوني:
+• بناء السلطة عبر المحتوى التعليمي الموضوعي
+• توضيح التخصصات لاستهداف الجمهور الصحيح
+• إبراز قصص النجاح باحترام سرية الموكلين
+• الحضور المتسق عبر قنوات متعددة
+
+📱 أفكار السوشال ميديا:
+• سلسلة "هل تعلم؟" — معلومة قانونية يومية مُبسَّطة
+• فيديوهات Reel تعليمية قصيرة لا تتجاوز 90 ثانية
+• استفتاءات تفاعلية وجلسات أسئلة وأجوبة مباشرة
+• محتوى مناسباتي مرتبط بالتشريعات الجديدة
+
+📢 الحملات الإعلانية الرئيسية:
+1. "حقوقك في يدك" — للأفراد والمواطنين
+2. "شريكك القانوني في التجارة" — لأصحاب الشركات
+3. "صفقتك العقارية في مأمن" — للسوق العقاري
+4. "الأسرة في أمان قانوني" — للأحوال الشخصية
+5. "خبرة تتحدث" — لتعزيز الهوية المؤسسية
+6. "استشارة الآن" — لتخفيض الحاجز الأول
+
+🎬 أفكار الفيديو:
+• فيديوهات تعليمية 60 ثانية عن الحقوق اليومية
+• مشاهد تمثيلية: "قبل وبعد" المحامي
+• بث مباشر: جلسات "اسأل المحامي"
+
+🏛️ هوية المكتب:
+• لوحة ألوان: كحلي + ذهبي + أبيض
+• شعار عصري + شعار مؤسسي مميز
+• تجربة متكاملة للموكل من الاستقبال حتى إغلاق الملف
+
+🌐 الموقع الإلكتروني:
+• SEO محلي + مدونة قانونية + نماذج تواصل فعّالة
+• Google Business Profile + Live Chat
+
+📅 خطة 30 يوماً: تغطي 30 فكرة منشور موزعة على جميع المنصات
+
+✍️ 10 نصوص إعلانية جاهزة لكل تخصص
+
+⚖️ التوصيات الأخلاقية:
+• لا وعود بنتائج قانونية
+• سرية مطلقة للموكلين
+• محتوى دقيق ومراجع قانونياً
+• امتثال كامل لقواعد نقابة المحامين
+    `.trim();
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(summary).then(() => showToast()).catch(() => fallbackCopy(summary));
+    } else {
+      fallbackCopy(summary);
+    }
+  }
+
+  function fallbackCopy(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.top = '-9999px';
+    document.body.appendChild(ta);
+    ta.focus(); ta.select();
+    try { document.execCommand('copy'); showToast(); } catch(e) { alert('تعذّر النسخ — يرجى النسخ يدوياً'); }
+    document.body.removeChild(ta);
+  }
+
+  function showToast() {
+    const toast = document.getElementById('toast');
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3000);
+  }
+</script>
+
+</body>
+</html>
